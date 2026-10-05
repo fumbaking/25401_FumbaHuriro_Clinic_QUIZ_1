@@ -22,7 +22,7 @@ a JPQL bulk update.
 
    ```powershell
    $env:SPRING_JPA_HIBERNATE_DDL_AUTO = 'update'
-   .\mvnw.cmd spring-boot:run
+   mvn spring-boot:run
    ```
 
 The API listens on `http://localhost:8081`.
