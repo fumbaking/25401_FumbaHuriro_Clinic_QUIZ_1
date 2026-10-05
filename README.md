@@ -21,7 +21,6 @@ a JPQL bulk update.
 3. From this directory in PowerShell, run:
 
    ```powershell
-   $env:SPRING_JPA_HIBERNATE_DDL_AUTO = 'update'
    mvn spring-boot:run
    ```
 
