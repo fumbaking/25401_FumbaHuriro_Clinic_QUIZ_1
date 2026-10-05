@@ -44,22 +44,5 @@ The API listens on `http://localhost:8081`.
 | Office whose doctor has the most appointments | `GET /api/offices/busiest` |
 | Cancel a doctor's appointments for one date, except completed ones | `PATCH /api/appointments/cancel-day?doctorId={doctorId}&date=2026-10-20` |
 
-The existing singular CRUD routes (for example, `/api/patient` and
-`/api/appointment`) remain available. Plural route aliases are provided for
-the quiz endpoints.
-
-## Seed data and API testing
-
-Use the save endpoints and then their corresponding `/all` endpoints to
-retrieve generated UUIDs. Create offices, doctors, specializations, patients,
-and then appointments in that order. Appointment statuses are `SCHEDULED`,
-`CONFIRMED`, `COMPLETED`, and `CANCELLED`.
-
-See [POSTMAN_TESTING_GUIDE.txt](POSTMAN_TESTING_GUIDE.txt) for CRUD request
-examples and the quiz endpoint checklist. Import
-[Clinic-Quiz.postman_collection.json](Clinic-Quiz.postman_collection.json) into
-Postman to run assertions for the quiz endpoints. Its collection variables
-default to the local seed record IDs and can be edited for another database.
-Seed data is not loaded automatically.
 
 ```
